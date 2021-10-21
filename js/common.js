@@ -185,6 +185,59 @@ $('.review__carousel').slick({
     },
   ]
 });
+  
+$('.cerificats__carousel').slick({
+  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  speed: 1000,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
 
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+        dots: true,
+
+      }
+    },
+  ]
+});
+  
+  $('.city').on('click', function () {
+    if (!$(this).hasClass('active')) {
+      $('.city').removeClass('active');
+      $('.city__desc').slideUp();
+      $(this).addClass('active');
+      $(this).find('.city__desc').slideDown();
+    } else {
+      
+    }
+ 
+  });
+
+
+  $(".map__nav").mCustomScrollbar({
+      theme:"rounded-dark"
+  });
   
 });//$(document).ready
