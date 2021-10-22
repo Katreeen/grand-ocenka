@@ -186,7 +186,7 @@ $('.review__carousel').slick({
   ]
 });
   
-$('.cerificats__carousel').slick({
+$('.cerificats-img').slick({
   dots: false,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -215,6 +215,42 @@ $('.cerificats__carousel').slick({
       breakpoint: 575,
       settings: {
         slidesToShow: 2,
+        arrows: false,
+        dots: true,
+
+      }
+    },
+  ]
+});
+$('.cerificats-text').slick({
+  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  speed: 1000,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
         arrows: false,
         dots: true,
 
