@@ -617,8 +617,14 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
       .expert__name{padding-top: 26px;}
       .expert__post{margin-top: 20px; line-height: 1.25; padding-bottom: 20px;}
       
-
-
+/* reviews page */
+.reviews{}
+  .-reviews-top-row{align-items: center;}
+  .reviews__item{background: #FFFFFF; padding: 43px 30px; margin-bottom: 20px;}
+    .reviews__logo{}
+    .reviews__title{padding-left: 35px;}
+    .reviews__doc{padding-top: 50px;}
+    .reviews__text{padding-top: 50px; line-height: 1.5; color: #686868; padding-left: 35px;}
 
 
 
@@ -749,7 +755,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
 	.-fs-40{font-size: 32px;}
   .-fs-30{font-size: 26px;}
   .-fs-28{font-size: 28px;}
@@ -770,6 +776,8 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .slick-slide img{margin: auto;}
   .quote__img{position: absolute; top:30px; bottom: 0; width: 50%;}
   .quote__img img{height: 100%; object-fit: cover;}
+  .reviews__title{padding-left: 0;}
+  .reviews__text{padding-left: 0;}
 }
 
 @media screen and (max-width: 991px) {
@@ -844,12 +852,14 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .reating__item{padding-bottom: 30px;}
   .reating__icon{padding-bottom: 16px;}
   .reating__title{padding-bottom: 16px;}
+  .reviews__title {padding-top: 20px;}
 }
 @media screen and (max-width: 575px) {
   .-fs-40{font-size: 22px;}
   .-fs-30{font-size: 20px;}
   .-fs-22{font-size: 18px;}
   .-fs-25{font-size: 18px;}
+  .-fs-16{font-size: 14px;}
   .header__phone{justify-content: center;}
   .header__contacts{margin: 20px auto 0;}
   .mobil-logo{max-width: calc(100% - 70px);}
@@ -882,5 +892,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .quote-top__img{width: 100%; text-align: center;}
   .quote-top__img img{object-fit: contain; height: 100%; max-height: 300px;}
   .quote-top{margin-top: 0;}
+  .reviews__doc{padding-top: 30px;}
+  .reviews__text{padding-top: 30px;}
   
 }
