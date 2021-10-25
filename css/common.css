@@ -242,6 +242,7 @@
 
 /*-fs start*/
 .-fs-40{font-size: 40px;}
+.-fs-35{font-size: 35px;}
 .-fs-30{font-size: 30px;}
 .-fs-28{font-size: 28px;}
 .-fs-25{font-size: 25px;}
@@ -294,6 +295,10 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
 .btn-arrow{background: url(../i/btn-arrow-black.svg) #fff no-repeat center; padding: 0; border: none; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px;}
 .btn-arrow:hover, .btn-arrow:focus{background: url(../i/btn-arrow-white.svg) #E10922 no-repeat center; }
 .servises__item:hover .btn-arrow{background: url(../i/btn-arrow-white.svg) #E10922 no-repeat center; }
+
+.btn-more{}
+.btn-more:after{content:''; background: url(../i/arrow-bottom-white.svg)no-repeat; width: 9px;height: 9px; display: inline-block; vertical-align: middle; margin-left: 15px; }
+
 
 
 .-fullwidth {width:100%;}
@@ -626,15 +631,38 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
     .reviews__doc{padding-top: 50px;}
     .reviews__text{padding-top: 50px; line-height: 1.5; color: #686868; padding-left: 35px;}
 
+/* partners page */
+.partners-cat{}
+  .partners-cat__item{padding-bottom: 90px;}
+    .partners-cat-title{margin-bottom: 37px;}
+    .-partners-cat-row{height: 100%;}  
+    .-partner-col{margin-bottom: 20px;}
+      .partner{background: #FFFFFF; border-radius: 3px; padding: 21px 27px 40px; height: 100%;}
+        .partner__logo{height: 64px; display: flex; align-items: flex-end;}
+        .partner__name{padding-top: 24px;}
+        .partner__link{padding-top: 14px; display: block;}
+        .partner__link:before{content:''; background: url(../i/icon-link.svg) no-repeat; width: 14px; height: 14px; display: inline-block; vertical-align: middle;margin-right: 16px; background-size: contain;}
+        .partners-cat-btn{margin-top: 51px;}
 
 
 
-
-
-
-
-
-
+/* contacts page */
+.contacts-map{margin-bottom: 66px;}
+  .-contacts-row{padding-top: 38px; align-items: center;}
+    .contacts-info{max-width: 585px; color:#262626;}
+    .contacts-title{padding-bottom: 28px;}
+      .contacts-info a{color:#262626; text-decoration: none;}
+      .address{padding-left: 40px; position: relative; padding-bottom: 6px;}
+      .address:before{content:''; background: url(../i/ic-pin.svg)no-repeat; width: 16px; height: 20px; display: block; position: absolute; top: 8px; left: 0;}
+      .phone{padding-left: 40px; position: relative; padding-bottom: 6px;}
+      .phone:before{content:''; background: url(../i/ic-phone.svg)no-repeat; width: 16px; height: 16px; display: block; position: absolute; top: 8px; left: 0;}
+      .w-time{padding-left: 40px; position: relative; padding-bottom: 6px;}
+      .w-time:before{content:''; background: url(../i/ic-time.svg)no-repeat; width: 17px; height: 17px; display: block; position: absolute; top: 8px; left: 0;}
+      .maill{padding-left: 40px; position: relative; padding-bottom: 6px;}
+      .maill:before{content:''; background: url(../i/ic-mail.svg)no-repeat; width: 17px; height: 16px; display: block; position: absolute; top: 8px; left: 0;}
+      
+.branch{margin-left: 40px; max-width: 584px; padding-bottom: 35px; color:#262626;}
+.branch a{color:#262626; text-decoration: none;}
 
 
 
@@ -757,6 +785,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
 
 @media screen and (max-width: 1199px) {
 	.-fs-40{font-size: 32px;}
+  .-fs-35{font-size: 30px;}
   .-fs-30{font-size: 26px;}
   .-fs-28{font-size: 28px;}
   .-fs-25{font-size: 20px;}
@@ -816,6 +845,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .quote-top__img{position: static; text-align: right;}
   .quote-top__wrap{padding: 40px 0 40px 40px;}
   .quote-top{display: flex; align-items: flex-end;}
+  .map-img{margin-top: 20px; margin-left: auto; margin-right: auto;}
   
 
 }
@@ -856,9 +886,11 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
 }
 @media screen and (max-width: 575px) {
   .-fs-40{font-size: 22px;}
+  .-fs-35{font-size: 20px;}
   .-fs-30{font-size: 20px;}
   .-fs-22{font-size: 18px;}
   .-fs-25{font-size: 18px;}
+  .-fs-20{font-size: 16px;}
   .-fs-16{font-size: 14px;}
   .header__phone{justify-content: center;}
   .header__contacts{margin: 20px auto 0;}
@@ -894,5 +926,10 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .quote-top{margin-top: 0;}
   .reviews__doc{padding-top: 30px;}
   .reviews__text{padding-top: 30px;}
+  .partners-cat__item{padding-bottom: 40px;}
+  .partners-cat-btn{margin-top: 30px;}
+  .contacts-map{margin-bottom: 40px;}
+  .-contacts-row{padding-top: 0;}
+  .branch{margin-left: 0;}
   
 }
