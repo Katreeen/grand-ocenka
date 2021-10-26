@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap'); */
 @font-face {
   font-family: 'Neue Haas Unica';
   src: url('../fonts/NeueHaasUnica-Light.eot');
@@ -697,9 +697,9 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
     .page-item:last-child .page-link:hover, .page-item:last-child .page-link:focus{background: url(../i/pag-arrov-white-right.svg) #E10922 no-repeat center center; border: 1px solid #E10922;}
     
 /* 404 */
-.error{font-family: 'Ibarra Real Nova', serif; color: #000; border-bottom:1px solid rgba(0, 0, 0, 0.2); padding-top: 45px; padding-bottom: 64px;}
-  .error__title, .error__text{max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.24;}
-  .error__text{padding-top: 40px;}
+.error{ color: #000; border-bottom:1px solid rgba(0, 0, 0, 0.2); padding-top: 45px; padding-bottom: 64px;}
+  .error__title, .error__text{max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.24; }
+  .error__text{padding-top: 40px; }
   .error a{color: #000; text-decoration: underline;}
 
 /* popup */
