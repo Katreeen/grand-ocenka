@@ -384,7 +384,24 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
         .-yt:hover{background: url(../i/yt-black.svg)no-repeat center center;  border: 1px solid #757575;background-size: 13px 9px;}
         .-fb{background: url(../i/fb-white.svg)#E10922 no-repeat center center;background-size: 7px 14px;}
         .-fb:hover{background: url(../i/fb-black.svg)no-repeat center center; border: 1px solid #757575;background-size: 7px 14px;}
+
+/* header mobil */
+
+.header__mobil{display: none; align-items: center; justify-content: space-between; padding-left: 30px;}
+
+  a.m-phone{font-size: none; background: url(../i/mobil-phone.svg)no-repeat; width: 16px; height: 16px; display: block;}
+  .m-search{background: url(../i/search.svg)no-repeat center; width: 18px; height: 18px; display: block;}
+  .m-toggle{display: block; width: 45px; height: 45px; background: #F4F4F4 url(../i/burger.svg) no-repeat 50% 50%; background-size: 26px 17px; position: relative; right: -9px;}
+  .m-toggle.close{display: block; width: 45px; height: 45px; background: #F4F4F4 url(../i/ic-close.svg) no-repeat 50% 50%; position: relative; right: -9px;}
+.mobil-info{display: none;}
+
 /*header end*/
+
+
+
+
+
+
 
 /* section slider */
 
@@ -822,6 +839,8 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .-fs-30{font-size: 18px;}
   .-fs-22{font-size: 18px;}
   .-fs-28{font-size: 22px;}
+  .-fs-10{font-size: 10px;}
+  .-fs-12{font-size: 12px;}
   .menu__toggle { display: block; width: 56px; height: 42px; background: rgba(0, 66, 105, 0.07) url(../i/toggle.svg) no-repeat 50% 50%; background-size: 24px; border-radius: 5px; margin: 20px 0 20px auto;}
   .menu__toggle{position: absolute; right: 0; top: 0; margin: 20px 0;} 
   .form-search{max-width: 100%;}
@@ -863,6 +882,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .-fs-25{font-size: 18px;}
   .-fs-20{font-size: 16px;}
   .-fs-16{font-size: 14px;}
+  .-fs-10{font-size: 10px;}
   .header__phone{justify-content: center;}
   .header__contacts{margin: 20px auto 0;}
   .mobil-logo{max-width: calc(100% - 70px);}
@@ -907,5 +927,39 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   .page-item:first-child{margin-right: 15px;}
   .page-item:last-child{margin-left: 15px;}
   .error__text{padding-top: 30px; padding-bottom: 20px;}
-  
+  .header{padding-top: 0;}
+  .header__info{display: none;}
+  .header__mobil{display: flex; align-items: center; justify-content: space-between; padding-left: 1em; }
+
+  .header__top{border:none;  position: relative; z-index: 102; background: #fff; padding-left: 0; padding-right: 0; padding-top: 0;padding-bottom: 0; height: 45px; }
+  .-header-contacts-col{padding-right: 0;}
+  .menu__toggle{display: none;}
+  .header__search{width: 100%;}
+  .header__nav{border-top: 0;}
+  .header__search{display: none; padding: 10px 0}
+  #hmenu{position: absolute; top: -900px; left: 0; right: 0; display: block; z-index: 101;background: #F4F4F4; padding-top: 30px; }
+  #hmenu.show{top:100%}
+  .header__social{display: none;}
+  .dropdown-menu{background:transparent}
+  #hmenu .nav-link{padding-bottom: 30px;}
+  /* .header__logo{padding-bottom: 6px; padding-top: 6px;} */
+/* .header__nav{position: relative;}  */
+.menu__close, .mobil-logo{display: none!important;}
+.header{position: relative; background: #fff; }
+.header .navbar{position: static;}
+/* .header .container{padding: 0;} */
+.m-social{display: flex; align-items: center; justify-content: center; margin-top: 20px;}
+.mobil-info{padding-top: 15px; border-top:1px solid rgba(0, 0, 0, 0.2); margin-top: 20px; display: block;}
+.mobil-info .header__phone:before{display: none;}
+/* .mobil-info .btn-primary{width: auto;} */
+.mobil-info .header__phone{justify-content: flex-start; padding: 0;}
+.-mobil-info-row{align-items: center;}
+.m-navbar{list-style-type: none; padding-left: 0; margin-top: 25px;}
+#hmenu .m-navbar .nav-link{padding-bottom: 16px; font-size: 12px;}
+.header__logo .logo img{max-height: 33px;}
+.header__top:before{content:''; background: #fff; width: 20px; height: 45px; position: absolute; top: 0; left: -20px;}
+#hmenu .nav-link{font-size: 14px;}
+.footer__nav{display: none;}
+.footer__contacts{display: none;}
+.footer__logo{margin-top: 0;}
 }

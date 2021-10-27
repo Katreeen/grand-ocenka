@@ -60,7 +60,35 @@ $(document).ready(function () {
     $('#hmenu').removeClass('show');
   });
 
-  $('#hmenu, .menu__toggle').click(function (e) { e.stopPropagation(); })
+ 
+  $('.m-search').on('click', function () {
+    $('.header__search').slideToggle();
+  });
+  $('.m-toggle').on('click', function () {
+    //$('body').toggleClass('overlay');
+    if ($('#hmenu').hasClass('show')) {
+      $('#hmenu').removeClass('show');
+      $('.m-toggle').removeClass('close');
+      
+    } else {
+      $('#hmenu').addClass('show');
+      $('.m-toggle').addClass('close');
+    }
+    return false;
+    
+    
+
+  });
+  // $('.menu__close').on('click', function () {
+  //   $('body').removeClass('overlay');
+  //   $(".dropdown .dropdown-toggle").removeClass('open');
+  //   $(".dropdown-menu").slideUp();
+  //   $('#hmenu').removeClass('show');
+  // });
+
+
+
+  $('#hmenu, .menu__toggle, .m-toggle').click(function (e) { e.stopPropagation(); })
 
   $('body').on('click', function () {
 
