@@ -282,6 +282,7 @@ $('.certificats-text').slick({
         slidesToShow: 1,
         arrows: false,
         dots: true,
+        touchThreshold:1
 
       }
     },
