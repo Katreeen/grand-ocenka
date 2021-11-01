@@ -606,7 +606,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
       .city__subtitle{}
       .city.active .city__subtitle{color: #E41F25;}
       .city__phone{ color: #333333; text-decoration: none;}
-
+.map__wrap svg{max-width: 100%;}
 /*about reating */
 .reating{padding-top: 78px; padding-bottom: 0;}
   .-reating-row{}
@@ -956,7 +956,7 @@ button, .btn{text-decoration:none; cursor:pointer; text-align:center; -webkit-tr
   #hmenu.show{top:100%}
   .header__social{display: none;}
   .dropdown-menu{background:transparent}
-  #hmenu .nav-link{padding-bottom: 34px; font-size: 14px;}
+  #hmenu .nav-link{padding-bottom: 34px; font-size: 16px;}
   /* .header__logo{padding-bottom: 6px; padding-top: 6px;} */
 /* .header__nav{position: relative;}  */
 .menu__close, .mobil-logo{display: none!important;}
