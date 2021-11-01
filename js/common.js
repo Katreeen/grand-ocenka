@@ -245,7 +245,7 @@ $('.certificats-img').slick({
         slidesToShow: 1,
         arrows: false,
         dots: true,
-        touchThreshold:1
+       
 
       }
     },
@@ -282,7 +282,7 @@ $('.certificats-text').slick({
         slidesToShow: 1,
         arrows: false,
         dots: true,
-        touchThreshold:1
+       
 
       }
     },
