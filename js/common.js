@@ -214,7 +214,7 @@ $('.review__carousel').slick({
   ]
 });
   
-$('.cerificats-img').slick({
+$('.certificats-img').slick({
   dots: false,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -242,15 +242,16 @@ $('.cerificats-img').slick({
     {
       breakpoint: 575,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         arrows: false,
         dots: true,
+        touchThreshold:1
 
       }
     },
   ]
 });
-$('.cerificats-text').slick({
+$('.certificats-text').slick({
   dots: false,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -303,5 +304,32 @@ $('.cerificats-text').slick({
   $(".map__nav").mCustomScrollbar({
       theme:"rounded-dark"
   });
+
+
+
+  $(".map__wrap svg g").click(function () {
+    $(".map__nav .city").removeClass("active");
+    $(".map__wrap svg g").removeAttr("filter");
+    var city = $(this).data("id");
+    var shadow = $(this).data("filter");
+    $(this).attr("filter", shadow);
+    var cityArr = city.split(", ");
+    console.log(cityArr);
+    $(".map__nav").find(`[data-city='${cityArr[0]}']`).addClass("active");
+  });
+
+  $(".map__nav .city").click(function () {
+    $(".map__nav .city").removeClass("active");
+    $(".map__wrap svg g").removeAttr("filter");
+    var city = $(this).data("city");
+    $(this).addClass("active");
+    var map = $(".map__wrap svg").find(`[data-id*='${city}']`);
+    var filter = map.data("filter");
+    map.attr("filter", filter);
+  });
+
+
+
+
   
 });//$(document).ready
