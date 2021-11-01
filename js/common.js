@@ -243,8 +243,9 @@ $('.certificats-img').slick({
       breakpoint: 575,
       settings: {
         slidesToShow: 1,
-        arrows: false,
+        arrows: true,
         dots: true,
+        swipe: false
        
 
       }
